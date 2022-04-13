@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: red;
+    background-color: white;
     padding: 0;
     margin: 0;
 }
@@ -18,7 +18,7 @@ main{
 }
 
 h1{
-    background-color: rgba(78, 193, 238, 0.5);
+    background-color: rgba(23, 131, 179, 53%);
     color: white;
     font-weight: 400;
     font-size: 25px;
@@ -33,7 +33,8 @@ h1{
 }
 
 h2{
-    margin: 5px;
+    margin: 2%;
+    margin-top: 5%;
     font-weight: 500;
     font-size: 20px;
 }
@@ -66,8 +67,68 @@ p{
     height: auto;
     font-weight: normal;
     margin: 3%;
-    padding: 10%;
-    background-color: white;
+    padding: 5%;
+    padding-bottom: 13%;
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     
+}
+
+div[class~="tag"]{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin: 0.7%;
+    float: left;
+    color: white;
+    text-align: center;
+    line-height: normal;
+}
+
+.card:hover .front{
+    color: rgba(17, 117, 162, 59);
+}
+
+.card:hover .back{
+    color: rgba(17, 117, 162, 59);
+}
+
+.card:hover .device{
+    color: rgba(17, 117, 162, 59);
+}
+
+.front{
+    background-color: rgb(51, 201, 51);
+}
+
+
+.back{
+    background-color: rgb(255, 115, 0);
+}
+
+.device{
+    background-color: rgb(247, 201, 0);
+}
+
+i[class~="fa-solid"]{
+    border-radius: 50%;
+    padding: 21%;
+}
+
+#kanban .column .card:hover{
+    background-color: rgba(17, 117, 162, 59);
+    color: white;
+    cursor: pointer;
+}
+
+.card:hover  .fa-circle-xmark{
+    color: black;
+}
+
+i[class~="fa-circle-xmark"]{
+    float: right;
+    color: red;
+    background-color: white;
+    font-size: x-large;
+    padding: 0;
 }
