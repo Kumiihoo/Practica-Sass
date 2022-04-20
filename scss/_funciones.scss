@@ -1,0 +1,18 @@
+@mixin hover ($argumento1) {
+    color: $argumento1;
+}
+
+@mixin background {
+    background-image: url("https://images.unsplash.com/photo-1565118531796-763e5082d113?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80");
+    background-size:cover;
+    overflow: hidden;
+}
+
+@mixin borde ($forma: 10px){
+    border-radius: $forma;
+}
+
+@mixin centrar{
+    margin-right: auto;
+    margin-left: auto;
+}

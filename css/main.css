@@ -1,0 +1,129 @@
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  background-image: url("https://images.unsplash.com/photo-1565118531796-763e5082d113?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80");
+  background-size: cover;
+  overflow: hidden;
+  min-height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  background-color: rgba(23, 131, 179, 0.53);
+  color: white;
+  font-weight: 400;
+  font-size: 25px;
+  padding: 15px;
+  width: fit-content;
+  height: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 60px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+h2 {
+  margin: 2%;
+  margin-top: 5%;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 17;
+}
+
+p {
+  font-size: 17;
+}
+
+#kanban {
+  margin-right: auto;
+  margin-left: auto;
+  width: 95%;
+}
+
+.column {
+  width: 19%;
+  margin: 0.5%;
+  float: left;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+.card {
+  width: auto;
+  height: auto;
+  font-weight: normal;
+  margin: 3%;
+  padding: 5%;
+  padding-bottom: 13%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+}
+
+div[class~=tag] {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin: 0.7%;
+  float: left;
+  color: white;
+  text-align: center;
+  line-height: normal;
+}
+
+.card:hover .front {
+  color: rgba(17, 117, 162, 0.59);
+}
+.card:hover .back {
+  color: rgba(17, 117, 162, 0.59);
+}
+.card:hover .device {
+  color: rgba(17, 117, 162, 0.59);
+}
+.card:hover .fa-circle-xmark {
+  color: black;
+}
+
+.front {
+  background-color: rgb(51, 201, 51);
+}
+
+.back {
+  background-color: rgb(255, 115, 0);
+}
+
+.device {
+  background-color: rgb(247, 201, 0);
+}
+
+i[class~=fa-solid] {
+  border-radius: 50%;
+  padding: 21%;
+}
+
+#kanban .column .card:hover {
+  background-color: rgba(17, 117, 162, 0.59);
+}
+
+i[class~=fa-circle-xmark] {
+  float: right;
+  color: red;
+  background-color: white;
+  font-size: x-large;
+  padding: 0;
+}
+
+/*# sourceMappingURL=main.css.map */

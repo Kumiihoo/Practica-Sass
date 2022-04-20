@@ -1,0 +1,129 @@
+@import 'variables';
+@import 'funciones';
+
+* {
+    font-family: $fonts;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: map-get($colors, "blanco");
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    @include background;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h1{
+    background-color: map-get($colors, "azul transparente");
+    color: map-get($colors, "blanco");
+    font-weight: 400;
+    font-size: 25px;
+    padding: 15px;
+    width: fit-content;
+    height: fit-content;
+    @include centrar;
+    margin-top: 60px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+h2{
+    margin: 2%;
+    margin-top: 5%;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+h3{
+    font-weight: 500;
+    font-size: 17;
+}
+
+p{
+    font-size: 17;
+} 
+
+#kanban{
+    @include centrar;
+    width: 95%;
+}
+
+.column{
+    width: 19%;
+    margin: 0.5%;
+    float: left;
+    background-color: map-get($colors, "gris transparente");
+    @include borde;
+}
+
+.card{
+    width: auto;
+    height: auto;
+    font-weight: normal;
+    margin: 3%;
+    padding: 5%;
+    padding-bottom: 13%;
+    background-color: map-get($colors, "blanco transparente");
+    @include borde;
+    
+}
+
+div[class~="tag"]{
+    height: 30px;
+    width: 30px;
+    @include borde (50%);
+    margin: 0.7%;
+    float: left;
+    color: map-get($colors, "blanco");
+    text-align: center;
+    line-height: normal;
+}
+
+.card:hover{
+    .front {
+        @include hover (map-get($colors, "azul"));
+    }
+    .back {
+        @include hover (map-get($colors, "azul"));
+    }
+    .device {
+        @include hover (map-get($colors, "azul"));
+    }
+    .fa-circle-xmark{
+        @include hover (map-get($colors, "negro"));
+    }
+}
+
+.front{
+    background-color: map-get($colors, "verde")
+}
+
+.back{
+    background-color: map-get($colors, "naranja")
+}
+
+.device{
+    background-color: map-get($colors, "amarillo")
+}
+
+i[class~="fa-solid"]{
+    @include borde (50%);
+    padding: 21%;
+}
+
+#kanban .column .card:hover{
+    background-color: map-get($colors, "azul");
+}
+
+i[class~="fa-circle-xmark"]{
+    float: right;
+    color: map-get($colors, "rojo");
+    background-color: map-get($colors, "blanco");
+    font-size: x-large;
+    padding: 0;
+}
